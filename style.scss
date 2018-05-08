@@ -10,6 +10,7 @@ body {
     height: 100%;
     width: 100%;
     box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 // Main Styles
@@ -27,7 +28,7 @@ body {
     }
 
     .active {
-        color: tomato;
+        color: #fff;
         display: block;
     }
 }
@@ -36,18 +37,26 @@ body {
     
     &__navigation {
         display: flex;
+        align-items: center;
         list-style: none;
 
         li {
+            width: auto;
+            height: 4rem;
             margin-right: 2rem;
             margin-bottom: 2rem;
             color:#fff;
             padding-bottom: 1rem;
+            transition: .3s ease-in-out;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
         }
 
-        .active {
-            border-bottom: 1px solid tomato;
-            color: tomato;
+        .selected {
+            border-bottom: 1px solid slateblue;
+            color: slateblue;
+            font-size: 2rem;
         }
     }
 

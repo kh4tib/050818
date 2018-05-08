@@ -9,12 +9,12 @@ tabs.addEventListener("click", function(ev){
         details.forEach(function(detail){
             if(detail === targetTab){
                 detail.classList.add("active");
-                itemOne.classList.remove("active");
-                itemTwo.classList.add("active");
+                itemOne.classList.remove("selected");
+                itemTwo.classList.add("selected");
             } else{
                 detail.classList.remove("active");
-                itemOne.classList.add("active");
-                itemTwo.classList.remove("active");
+                itemOne.classList.add("selected");
+                itemTwo.classList.remove("selected");
             }
         })
     }
